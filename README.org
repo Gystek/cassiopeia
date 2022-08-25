@@ -1,0 +1,44 @@
+* Cassiopeia
+
+| Rank | Constellation | Size (area in square degrees | Quadrant |
+|------+---------------+------------------------------+----------|
+|  ... | ...           |                          ... | ...      |
+|   25 | Cassiopeia    |                      598.407 | NQ1      |
+|   26 | Orion         |                      594.120 | NQ1      |
+-- [[https://www.constellation-guide.com/constellation-map/largest-constellations/][List of largest constellations]]
+
+Cassiopeia is a statically typed purely functional programming
+language. It looks like a Lisp but it ain't one. Why ? I had to choose
+between static typing and homoiconicity, and I chosed the former. It
+looks like a Lisp because I am just too lazy to think about a decent
+syntax and because I like it the way it is.
+
+** Features
+
+Cassiopeia is
+
++ Slow.
++ Probably bug-ridden.
++ Running on a virtual machine
++ Purely functional as it only has pure values
++ Meta-programmable
+
+** Что дѣлать?
+
+- [ ] Reader
+- [ ] Typechecker
+- [ ] Optimizer
+- [ ] Compiler
+- [ ] Virtual Machine
+- [ ] Bytecode Optimizer
+- [ ] Type inference
+- [ ] Assembly compilation
+
+** Building and installing
+
+#+BEGIN_SRC shell
+  # Building
+  $ cargo build --release
+  # Installing
+  $ make clean install
+#+END_SRC
