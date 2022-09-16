@@ -8,14 +8,11 @@
 -- [[https://www.constellation-guide.com/constellation-map/largest-constellations/][List of largest constellations]]
 
 Cassiopeia is a statically typed purely functional programming
-language. It looks like a Lisp but it ain't one. Why ? I had to choose
-between static typing and homoiconicity, and I chosed the former. It
-looks like a Lisp because I am just too lazy to think about a decent
-syntax and because I like it the way it is.
+language.
 
 ** Features
 
-Cassiopeia is
+Cassiopeia +will-be+ is
 
 + Slow.
 + Probably bug-ridden.
@@ -25,11 +22,13 @@ Cassiopeia is
 
 ** Что дѣлать?
 
-- [ ] Reader
+- [ ] Lexer
+- [ ] Parser
 - [ ] Typechecker
 - [ ] Optimizer
 - [ ] Compiler
 - [ ] Virtual Machine
+- [ ] Macros
 - [ ] Bytecode Optimizer
 - [ ] Type inference
 - [ ] Assembly compilation
