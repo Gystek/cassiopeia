@@ -5,6 +5,7 @@
 |  ... | ...           |                          ... | ...      |
 |   25 | Cassiopeia    |                      598.407 | NQ1      |
 |   26 | Orion         |                      594.120 | NQ1      |
+|      |               |                              |          |
 -- [[https://www.constellation-guide.com/constellation-map/largest-constellations/][List of largest constellations]]
 
 Cassiopeia is a statically typed purely functional programming
@@ -22,7 +23,7 @@ Cassiopeia +will-be+ is
 
 ** Что дѣлать?
 
-- [ ] Lexer
+- [X] Lexer
 - [ ] Parser
 - [ ] Typechecker
 - [ ] Optimizer

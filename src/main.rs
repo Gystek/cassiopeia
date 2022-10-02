@@ -53,5 +53,5 @@ fn main() {
         Err(e) => eprintln!("{}", e),
     }
 
-    exit(1);
+    exit(1)
 }
