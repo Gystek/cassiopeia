@@ -1,6 +1,7 @@
 #[macro_use]
 mod errors;
 mod lexer;
+mod parser;
 mod tokens;
 mod utils;
 
@@ -28,15 +29,18 @@ fn try_main() -> Result<()> {
         match Lexer::new(&buffer)
             .file(FILE)
             .operators(&[
-                "+", "-", "*", "/", "+.", "-.", "*.", "/.", "<>", ":", "->", "==", "/=", "<=", "<",
-                ">", ">=",
+                "+", "-", "*", "/", "+.", "-.", "*.", "/.", "<>", ":", "->", "==", "<=", "<", ">",
+                ">=", ",", "&&", "||", "^^", ":-",
             ])
             .delimiters(&[
                 (Delimiter::Bracket, '[', ']'),
                 (Delimiter::Paren, '(', ')'),
                 (Delimiter::Brace, '{', '}'),
             ])
-            .keywords(&["let", "fun", "if", "then", "else", "match"])
+            .keywords(&[
+                "let", "fun", "if", "then", "else", "match", "integer", "float", "string", "char",
+                "bool", "true", "false",
+            ])
             .lex()
         {
             Ok(t) => t.into_iter().for_each(|x| println!("{:?}", x)),
